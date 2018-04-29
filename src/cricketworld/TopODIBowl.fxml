@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cricketworld.TopODIBowlController">
+   <children>
+      <TableView fx:id="tvTopODIBowl" prefHeight="1000.0" prefWidth="931.0">
+         <columns>
+            <TableColumn fx:id="tcODIName" prefWidth="196.0" text="Name" />
+            <TableColumn fx:id="tcODIMatches" prefWidth="150.0" text="Matches" />
+            <TableColumn fx:id="tcODIWickets" prefWidth="132.0" text="Wickets" />
+            <TableColumn fx:id="tcODIw5" prefWidth="165.0" text="W5" />
+            <TableColumn fx:id="tcODIBestBowling" prefWidth="169.0" text="BestBowling" />
+            <TableColumn fx:id="tcRunsGiven" prefWidth="118.0" text="Runs Given" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

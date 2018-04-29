@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apTest" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cricketworld.TestController">
+   <children>
+      <SplitPane dividerPositions="0.08185610010427528" layoutX="86.0" layoutY="63.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="105.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="bPersonal" mnemonicParsing="false" onAction="#showPersonal" prefHeight="138.0" prefWidth="150.0" text="Personal" />
+                        <Button fx:id="bTest" mnemonicParsing="false" onAction="#showTest" prefHeight="138.0" prefWidth="150.0" text="Test" />
+                        <Button fx:id="bODI" mnemonicParsing="false" onAction="#showODI" prefHeight="138.0" prefWidth="150.0" text="ODI" />
+                        <Button fx:id="bT20" mnemonicParsing="false" onAction="#showT20" prefHeight="138.0" prefWidth="150.0" text="T20" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.5157992565055762" orientation="VERTICAL" prefHeight="1078.0" prefWidth="1701.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TextField fx:id="tPlayerId" layoutX="48.0" layoutY="62.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Player Id" />
+                              <TextField fx:id="tRunsScored" layoutX="48.0" layoutY="243.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Runs Scored" />
+                              <TextField fx:id="tInnings" layoutX="48.0" layoutY="323.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Innings" />
+                              <TextField fx:id="tBallsFaced" layoutX="48.0" layoutY="410.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Balls Faced" />
+                              <TextField fx:id="tBestScore" layoutX="48.0" layoutY="501.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Best Score" />
+                              <TextField fx:id="tCentury" layoutX="343.0" layoutY="147.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Century" />
+                              <TextField fx:id="tFifty" layoutX="343.0" layoutY="243.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Fifty" />
+                              <TextField fx:id="tDucks" layoutX="343.0" layoutY="323.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Ducks" />
+                              <TextField fx:id="tBallsBowled" layoutX="343.0" layoutY="410.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Balls Bowled" />
+                              <TextField fx:id="tWickets" layoutX="343.0" layoutY="501.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Wickets" />
+                              <TextField fx:id="tW5" layoutX="966.0" layoutY="243.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter W5" />
+                              <TextField fx:id="tW10" layoutX="663.0" layoutY="243.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter W10" />
+                              <TextField fx:id="tBestBowling" layoutX="663.0" layoutY="323.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Best Bowling" />
+                              <TextField fx:id="tManOfMatch" layoutX="663.0" layoutY="410.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Man Of Match" />
+                              <TextField fx:id="tCatches" layoutX="663.0" layoutY="501.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Catches" />
+                              <Button fx:id="bAdd" layoutX="1360.0" layoutY="290.0" mnemonicParsing="false" onAction="#addData" prefHeight="80.0" prefWidth="125.0" text="Add" />
+                              <Button fx:id="bLoad" layoutX="1360.0" layoutY="370.0" mnemonicParsing="false" onAction="#loadData" prefHeight="80.0" prefWidth="125.0" text="Load" />
+                              <Button fx:id="bUpdate" layoutX="1360.0" layoutY="450.0" mnemonicParsing="false" onAction="#updateData" prefHeight="80.0" prefWidth="125.0" text="Update" />
+                              <Button fx:id="bSearch" layoutX="1487.0" layoutY="370.0" mnemonicParsing="false" onAction="#searchData" prefHeight="80.0" prefWidth="125.0" text="Search" />
+                              <Button fx:id="bNew" layoutX="1487.0" layoutY="290.0" mnemonicParsing="false" onAction="#newData" prefHeight="80.0" prefWidth="125.0" text="New" />
+                              <Button fx:id="bDelete" layoutX="1487.0" layoutY="450.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="80.0" prefWidth="125.0" text="Delete" />
+                              <TextField fx:id="tFours" layoutX="966.0" layoutY="410.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Fours" />
+                              <TextField fx:id="tSixes" layoutX="966.0" layoutY="501.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Sixes" />
+                              <TextField fx:id="tMatches" layoutX="48.0" layoutY="147.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Matches" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="264.0" layoutX="1300.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="373.0" />
+                              <TextField fx:id="tRunsGiven" layoutX="966.0" layoutY="323.0" prefHeight="31.0" prefWidth="229.0" promptText="Enter Runs Given" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TableView fx:id="tvTest" layoutX="52.0" layoutY="39.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn fx:id="tcPlayerId" prefWidth="56.0" text="ID" />
+                                    <TableColumn fx:id="tcRunsGiven" prefWidth="90.0" text="Runs Given" />
+                                    <TableColumn fx:id="tcInnings" prefWidth="84.0" text="Innings" />
+                                    <TableColumn fx:id="tcBallsFaced" prefWidth="99.0" text="Balls Faced" />
+                                    <TableColumn fx:id="tcBestScore" prefWidth="98.0" text="Best Score" />
+                                    <TableColumn fx:id="tcCentury" prefWidth="107.0" text="Century" />
+                                    <TableColumn fx:id="tcFifty" prefWidth="75.0" text="Fifty" />
+                                    <TableColumn fx:id="tcDucks" prefWidth="79.0" text="Duck" />
+                                    <TableColumn fx:id="tcBallsBowled" prefWidth="105.0" text="Balls Bowled" />
+                                    <TableColumn fx:id="tcWickets" prefWidth="76.0" text="Wickets" />
+                                    <TableColumn fx:id="tcW5" prefWidth="71.0" text="W5" />
+                                    <TableColumn fx:id="tcW10" prefWidth="59.0" text="W10" />
+                                    <TableColumn fx:id="tcBestBowling" prefWidth="116.0" text="Best Bowling" />
+                                    <TableColumn fx:id="tcManOfMatch" text="MOM" />
+                                    <TableColumn fx:id="tcCatches" prefWidth="99.0" text="Catches" />
+                                    <TableColumn fx:id="tcMatches" prefWidth="78.0" text="Matches" />
+                                    <TableColumn fx:id="tcSixes" prefWidth="105.0" text="Sixes" />
+                                    <TableColumn fx:id="tcFours" prefWidth="94.0" text="Fours" />
+                                    <TableColumn fx:id="tcRunsScored" prefWidth="127.0" text="Runs Scored" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

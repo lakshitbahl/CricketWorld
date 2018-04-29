@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apNameView" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cricketworld.NameViewController">
+   <children>
+      <TabPane prefHeight="1096.0" prefWidth="1929.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Name Wise Search">
+               <content>
+                  <AnchorPane prefHeight="900.0" prefWidth="1500.0">
+                     <children>
+                        <SplitPane dividerPositions="0.27014218009478674" layoutX="2.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="1044.0" prefWidth="1596.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-1.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="277.0" prefWidth="1589.0">
+                                 <children>
+                                    <TextField fx:id="tName" layoutX="28.0" layoutY="65.0" onKeyReleased="#searchName" prefHeight="46.0" prefWidth="249.0" promptText="Enter Name" />
+                                    <TableView fx:id="tvPTable" layoutX="317.0" layoutY="4.0" onMouseClicked="#loadData" prefHeight="273.0" prefWidth="1169.0">
+                                      <columns>
+                                        <TableColumn fx:id="tcPlayerId" prefWidth="75.0" text="Player Id" />
+                                        <TableColumn fx:id="tcName" prefWidth="119.0" text="Name" />
+                                          <TableColumn fx:id="tcCountry" prefWidth="111.0" text="Country" />
+                                          <TableColumn fx:id="tcGender" prefWidth="92.0" text="Gender" />
+                                          <TableColumn fx:id="tcHeight" prefWidth="99.0" text="Height" />
+                                          <TableColumn fx:id="tcWeight" prefWidth="103.0" text="Weight" />
+                                          <TableColumn fx:id="tcBloodGroup" prefWidth="134.0" text="Blood Group" />
+                                          <TableColumn fx:id="tcDOB" prefWidth="114.0" text="DOB" />
+                                          <TableColumn fx:id="tcBatsman" prefWidth="106.0" text="Batsman" />
+                                          <TableColumn fx:id="tcBowler" prefWidth="101.0" text="Bowler" />
+                                          <TableColumn fx:id="tcWicketKeeper" prefWidth="113.0" text="Wicket Keeper" />
+                                      </columns>
+                                    </TableView>
+                                    <Button fx:id="bBack" layoutX="28.0" layoutY="144.0" mnemonicParsing="false" onAction="#goBack" prefHeight="69.0" prefWidth="123.0" text="Back" />
+                                    <ImageView fx:id="imageView" fitHeight="251.0" fitWidth="400.0" layoutX="1506.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="833.0" prefWidth="1314.0">
+                                 <children>
+                                    <Pane layoutY="5.0" prefHeight="747.0" prefWidth="490.0">
+                                       <children>
+                                          <VBox layoutX="186.0" layoutY="61.0" prefHeight="590.0" prefWidth="269.0">
+                                             <children>
+                                                <TextField fx:id="tTtMatch" prefHeight="31.0" prefWidth="224.0" />
+                                                <TextField fx:id="tTtRunsScored" prefHeight="31.0" prefWidth="221.0" />
+                                                <TextField fx:id="tTtInnings" prefHeight="31.0" prefWidth="222.0" />
+                                                <TextField fx:id="tTtBallsFaced" prefHeight="31.0" prefWidth="226.0" />
+                                                <TextField fx:id="tTtCentury" prefHeight="31.0" prefWidth="218.0" />
+                                                <TextField fx:id="tTtFifty" prefHeight="31.0" prefWidth="228.0" />
+                                                <TextField fx:id="tTtBestScore" prefHeight="31.0" prefWidth="225.0" />
+                                                <TextField fx:id="tTtDucks" prefHeight="31.0" prefWidth="224.0" />
+                                                <TextField fx:id="tTtBallsBowled" />
+                                                <TextField fx:id="tTtRunsGiven" />
+                                                <TextField fx:id="tTtWickets" />
+                                                <TextField fx:id="tTtW5" />
+                                                <TextField fx:id="tTtW10" />
+                                                <TextField fx:id="tTtBestBowling" />
+                                                <TextField fx:id="tTtMOM" />
+                                                <TextField fx:id="tTtCatches" />
+                                                <TextField fx:id="tTtFours" />
+                                                <TextField fx:id="tTtSixes" />
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="76.0" layoutY="63.0" prefHeight="587.0" prefWidth="100.0">
+                                             <children>
+                                                <Label prefHeight="30.0" prefWidth="60.0" text="Matches" />
+                                                <Label prefHeight="31.0" prefWidth="90.0" text="Runs Scored" />
+                                                <Label prefHeight="31.0" prefWidth="54.0" text="Innings" />
+                                                <Label prefHeight="31.0" prefWidth="77.0" text="Balls Faced" />
+                                                <Label prefHeight="31.0" prefWidth="58.0" text="Century" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Fifty" />
+                                                <Label prefHeight="31.0" prefWidth="77.0" text="Best Score" />
+                                                <Label prefHeight="31.0" prefWidth="66.0" text="Ducks" />
+                                                <Label prefHeight="31.0" prefWidth="90.0" text="Balls Bowled" />
+                                                <Label prefHeight="31.0" prefWidth="83.0" text="Runs Given" />
+                                                <Label prefHeight="31.0" prefWidth="60.0" text="Wickets" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="W5" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="W10" />
+                                                <Label prefHeight="31.0" prefWidth="87.0" text="Best Bowling" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="MOM" />
+                                                <Label prefHeight="31.0" prefWidth="63.0" text="Catches" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Fours" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Sixes" />
+                                             </children>
+                                          </VBox>
+                                          <Label layoutX="219.0" layoutY="11.0" prefHeight="47.0" prefWidth="62.0" text="Test" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="604.0" layoutY="8.0" prefHeight="742.0" prefWidth="555.0">
+                                       <children>
+                                          <VBox layoutX="166.0" layoutY="52.0" prefHeight="612.0" prefWidth="287.0">
+                                             <children>
+                                                <TextField fx:id="tOMatches" />
+                                                <TextField fx:id="tORunsScored" />
+                                                <TextField fx:id="tOInnings" />
+                                                <TextField fx:id="tOBallsFaced" />
+                                                <TextField fx:id="tOCentury" />
+                                                <TextField fx:id="tOFifty" />
+                                                <TextField fx:id="tOBestScore" />
+                                                <TextField fx:id="tODucks" />
+                                                <TextField fx:id="tOBallsBowled" />
+                                                <TextField fx:id="tORunsGiven" />
+                                                <TextField fx:id="tOWickets" />
+                                                <TextField fx:id="tOW5" />
+                                                <TextField fx:id="tOBestBowling" />
+                                                <TextField fx:id="tOMOM" />
+                                                <TextField fx:id="tOCatches" />
+                                                <TextField fx:id="tOFours" />
+                                                <TextField fx:id="tOSixes" />
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="66.0" layoutY="52.0" prefHeight="587.0" prefWidth="100.0">
+                                             <children>
+                                                <Label prefHeight="30.0" prefWidth="61.0" text="Matches" />
+                                                <Label prefHeight="31.0" prefWidth="85.0" text="Runs Scored" />
+                                                <Label prefHeight="31.0" prefWidth="59.0" text="Innings" />
+                                                <Label prefHeight="31.0" prefWidth="80.0" text="Balls Faced" />
+                                                <Label prefHeight="31.0" prefWidth="61.0" text="Century" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Fifty" />
+                                                <Label prefHeight="31.0" prefWidth="76.0" text="Best Score" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Ducks" />
+                                                <Label prefHeight="31.0" prefWidth="86.0" text="Balls Bowled" />
+                                                <Label prefHeight="31.0" prefWidth="79.0" text="Runs Given" />
+                                                <Label prefHeight="31.0" prefWidth="60.0" text="Wickets" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="W5" />
+                                                <Label prefHeight="31.0" prefWidth="90.0" text="Best Bowling" />
+                                                <Label prefHeight="31.0" prefWidth="98.0" text="Man Of Match" />
+                                                <Label prefHeight="31.0" prefWidth="56.0" text="Catches" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Fours" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Sixes" />
+                                             </children>
+                                          </VBox>
+                                          <Label layoutX="219.0" layoutY="14.0" text="ODI" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="1333.0" layoutY="14.0" prefHeight="740.0" prefWidth="571.0">
+                                       <children>
+                                          <VBox layoutX="211.0" layoutY="38.0" prefHeight="634.0" prefWidth="311.0">
+                                             <children>
+                                                <TextField fx:id="tT20Matches" />
+                                                <TextField fx:id="tT20RunsScored" />
+                                                <TextField fx:id="tT20Innings" />
+                                                <TextField fx:id="tT20BallsFaced" />
+                                                <TextField fx:id="tT20Fifty" />
+                                                <TextField fx:id="tT20Thirty" />
+                                                <TextField fx:id="tT20BestScore" />
+                                                <TextField fx:id="tT20Ducks" />
+                                                <TextField fx:id="tT20BallsBowled" />
+                                                <TextField fx:id="tT20RunsGiven" />
+                                                <TextField fx:id="tT20Wickets" />
+                                                <TextField fx:id="tT20W5" />
+                                                <TextField fx:id="tT20BestBowling" />
+                                                <TextField fx:id="tT20MOM" />
+                                                <TextField fx:id="tT20Catches" />
+                                                <TextField fx:id="tT20Fours" />
+                                                <TextField fx:id="tT20Sixes" />
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="86.0" layoutY="38.0" prefHeight="619.0" prefWidth="100.0">
+                                             <children>
+                                                <Label prefHeight="31.0" prefWidth="58.0" text="Matches" />
+                                                <Label prefHeight="31.0" prefWidth="87.0" text="Runs Scored" />
+                                                <Label prefHeight="31.0" prefWidth="55.0" text="Innings" />
+                                                <Label prefHeight="31.0" prefWidth="75.0" text="Balls faced" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Fifty" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Thirty" />
+                                                <Label prefHeight="31.0" prefWidth="75.0" text="Best Score" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Ducks" />
+                                                <Label prefHeight="31.0" prefWidth="87.0" text="Balls Bowled" />
+                                                <Label prefHeight="31.0" prefWidth="81.0" text="Runs Given" />
+                                                <Label prefHeight="31.0" prefWidth="60.0" text="Wickets" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="W5" />
+                                                <Label prefHeight="31.0" prefWidth="90.0" text="Best Bowling" />
+                                                <Label prefHeight="31.0" prefWidth="98.0" text="Man Of Match" />
+                                                <Label prefHeight="31.0" prefWidth="56.0" text="Catches" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Fours" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Sixes" />
+                                             </children>
+                                          </VBox>
+                                          <Label layoutX="314.0" layoutY="4.0" text="T20" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content></Tab>
+          <Tab text="Country Wise Search">
+               <content>
+                  <AnchorPane prefHeight="900.0" prefWidth="1500.0">
+                     <children>
+                        <SplitPane dividerPositions="0.26255924170616113" layoutX="2.0" orientation="VERTICAL" prefHeight="1057.0" prefWidth="1966.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="273.0" prefWidth="1618.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#aec3d7" height="265.0" layoutX="1523.0" layoutY="6.0" stroke="BLACK" strokeType="INSIDE" width="334.0" />
+                                    <TableView fx:id="tvCountry" layoutX="394.0" layoutY="6.0" onMouseClicked="#loadCdata" prefHeight="259.0" prefWidth="1113.0">
+                                       <columns>
+                                          <TableColumn fx:id="tcCPlayerId" prefWidth="75.0" text="Player Id" />
+                                          <TableColumn fx:id="tcCName" prefWidth="119.0" text="Name" />
+                                          <TableColumn fx:id="tcCCountry" prefWidth="101.0" text="Country" />
+                                          <TableColumn fx:id="tcCGender" prefWidth="74.0" text="Gender" />
+                                          <TableColumn fx:id="tcCHeight" prefWidth="83.0" text="Height" />
+                                          <TableColumn fx:id="tcCWeight" prefWidth="111.0" text="Weight" />
+                                          <TableColumn fx:id="tcCBloodGroup" prefWidth="114.0" text="Blood Group" />
+                                          <TableColumn fx:id="tcCDOB" prefWidth="119.0" text="DOB" />
+                                          <TableColumn fx:id="tcCBatsman" prefWidth="110.0" text="Batsman" />
+                                          <TableColumn fx:id="tcCBowler" prefWidth="97.0" text="Bowler" />
+                                          <TableColumn fx:id="tcCWicketKeeper" prefWidth="109.0" text="Wicket Keeper" />
+                                       </columns>
+                                    </TableView>
+                                    <Button fx:id="bCBack" layoutX="32.0" layoutY="105.0" mnemonicParsing="false" onAction="#goBack" prefHeight="61.0" prefWidth="118.0" text="Back" />
+                                    <ListView fx:id="lvCountry" layoutX="176.0" layoutY="24.0" onMouseClicked="#searchCountry" prefHeight="228.0" prefWidth="200.0" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="785.0" prefWidth="1358.0">
+                                 <children>
+                                    <Pane layoutX="33.0" layoutY="20.0" prefHeight="600.0" prefWidth="476.0">
+                                       <children>
+                                          <Label layoutX="176.0" layoutY="21.0" text="Test" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="615.0" layoutY="44.0" prefHeight="611.0" prefWidth="516.0">
+                                       <children>
+                                          <VBox layoutX="69.0" layoutY="37.0" prefHeight="587.0" prefWidth="100.0">
+                                             <children>
+                                                <Label prefHeight="30.0" prefWidth="61.0" text="Matches" />
+                                                <Label prefHeight="31.0" prefWidth="85.0" text="Runs Scored" />
+                                                <Label prefHeight="31.0" prefWidth="59.0" text="Innings" />
+                                                <Label prefHeight="31.0" prefWidth="80.0" text="Balls Faced" />
+                                                <Label prefHeight="31.0" prefWidth="61.0" text="Century" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Fifty" />
+                                                <Label prefHeight="31.0" prefWidth="76.0" text="Best Score" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Ducks" />
+                                                <Label prefHeight="31.0" prefWidth="86.0" text="Balls Bowled" />
+                                                <Label prefHeight="31.0" prefWidth="79.0" text="Runs Given" />
+                                                <Label prefHeight="31.0" prefWidth="60.0" text="Wickets" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="W5" />
+                                                <Label prefHeight="31.0" prefWidth="90.0" text="Best Bowling" />
+                                                <Label prefHeight="31.0" prefWidth="98.0" text="Man Of Match" />
+                                                <Label prefHeight="31.0" prefWidth="56.0" text="Catches" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Fours" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Sixes" />
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="181.0" layoutY="37.0" prefHeight="555.0" prefWidth="287.0">
+                                             <children>
+                                                <TextField fx:id="tfOMatches" />
+                                                <TextField fx:id="tfORunsScored" />
+                                                <TextField fx:id="tfOInnings" />
+                                                <TextField fx:id="tfOBallsFaced" />
+                                                <TextField fx:id="tfOCentury" />
+                                                <TextField fx:id="tfOFifty" />
+                                                <TextField fx:id="tfOBestScore" />
+                                                <TextField fx:id="tfODucks" />
+                                                <TextField fx:id="tfOBallsBowled" />
+                                                <TextField fx:id="tfORunsGiven" />
+                                                <TextField fx:id="tfOWickets" />
+                                                <TextField fx:id="tfOW5" />
+                                                <TextField fx:id="tfOBestBowling" />
+                                                <TextField fx:id="tfOMom" />
+                                                <TextField fx:id="tfOCatches" />
+                                                <TextField fx:id="tfOFours" />
+                                                <TextField fx:id="tfOSixes" />
+                                             </children>
+                                          </VBox>
+                                          <Label layoutX="241.0" text="ODI" />
+                                       </children>
+                                    </Pane>
+                                    <Pane layoutX="1245.0" layoutY="34.0" prefHeight="600.0" prefWidth="562.0">
+                                       <children>
+                                          <VBox layoutX="51.0" layoutY="36.0" prefHeight="547.0" prefWidth="100.0">
+                                             <children>
+                                                <Label prefHeight="31.0" prefWidth="58.0" text="Matches" />
+                                                <Label prefHeight="31.0" prefWidth="87.0" text="Runs Scored" />
+                                                <Label prefHeight="31.0" prefWidth="55.0" text="Innings" />
+                                                <Label prefHeight="31.0" prefWidth="75.0" text="Balls faced" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Fifty" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Thirty" />
+                                                <Label prefHeight="31.0" prefWidth="75.0" text="Best Score" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Ducks" />
+                                                <Label prefHeight="31.0" prefWidth="87.0" text="Balls Bowled" />
+                                                <Label prefHeight="31.0" prefWidth="81.0" text="Runs Given" />
+                                                <Label prefHeight="31.0" prefWidth="60.0" text="Wickets" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="W5" />
+                                                <Label prefHeight="31.0" prefWidth="90.0" text="Best Bowling" />
+                                                <Label prefHeight="31.0" prefWidth="98.0" text="Man Of Match" />
+                                                <Label prefHeight="31.0" prefWidth="56.0" text="Catches" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Fours" />
+                                                <Label prefHeight="31.0" prefWidth="50.0" text="Sixes" />
+                                             </children>
+                                          </VBox>
+                                          <VBox layoutX="151.0" layoutY="36.0" prefHeight="557.0" prefWidth="311.0">
+                                             <children>
+                                                <TextField fx:id="tfTMatches" />
+                                                <TextField fx:id="tfTRunsScored" />
+                                                <TextField fx:id="tfTInnings" />
+                                                <TextField fx:id="tfTBallsFaced" />
+                                                <TextField fx:id="tfTFifty" />
+                                                <TextField fx:id="tfTThirty" />
+                                                <TextField fx:id="tfTBestScore" />
+                                                <TextField fx:id="tfTDucks" />
+                                                <TextField fx:id="tfTBallsBowled" />
+                                                <TextField fx:id="tfTRunsGiven" />
+                                                <TextField fx:id="tfTWickets" />
+                                                <TextField fx:id="tfTW5" />
+                                                <TextField fx:id="tfTBestBowling" />
+                                                <TextField fx:id="tfTMom" />
+                                                <TextField fx:id="tfTCatches" />
+                                                <TextField fx:id="tfTFours" />
+                                                <TextField fx:id="tfTSixes" />
+                                             </children>
+                                          </VBox>
+                                          <Label layoutX="246.0" layoutY="4.0" text="T20" />
+                                       </children>
+                                    </Pane>
+                                    <VBox layoutX="86.0" layoutY="73.0" prefHeight="587.0" prefWidth="100.0">
+                                       <children>
+                                          <Label prefHeight="30.0" prefWidth="60.0" text="Matches" />
+                                          <Label prefHeight="31.0" prefWidth="90.0" text="Runs Scored" />
+                                          <Label prefHeight="31.0" prefWidth="54.0" text="Innings" />
+                                          <Label prefHeight="31.0" prefWidth="77.0" text="Balls Faced" />
+                                          <Label prefHeight="31.0" prefWidth="58.0" text="Century" />
+                                          <Label prefHeight="31.0" prefWidth="50.0" text="Fifty" />
+                                          <Label prefHeight="31.0" prefWidth="77.0" text="Best Score" />
+                                          <Label prefHeight="31.0" prefWidth="66.0" text="Ducks" />
+                                          <Label prefHeight="31.0" prefWidth="90.0" text="Balls Bowled" />
+                                          <Label prefHeight="31.0" prefWidth="83.0" text="Runs Given" />
+                                          <Label prefHeight="31.0" prefWidth="60.0" text="Wickets" />
+                                          <Label prefHeight="31.0" prefWidth="50.0" text="W5" />
+                                          <Label prefHeight="31.0" prefWidth="50.0" text="W10" />
+                                          <Label prefHeight="31.0" prefWidth="87.0" text="Best Bowling" />
+                                          <Label prefHeight="31.0" prefWidth="100.0" text="Man Of Match" />
+                                          <Label prefHeight="31.0" prefWidth="63.0" text="Catches" />
+                                          <Label prefHeight="31.0" prefWidth="50.0" text="Fours" />
+                                          <Label prefHeight="31.0" prefWidth="50.0" text="Sixes" />
+                                       </children>
+                                    </VBox>
+                                    <VBox layoutX="206.0" layoutY="81.0" prefHeight="590.0" prefWidth="269.0">
+                                       <children>
+                                          <TextField fx:id="tfMatches" prefHeight="31.0" prefWidth="224.0" />
+                                          <TextField fx:id="tfRunsScored" prefHeight="31.0" prefWidth="221.0" />
+                                          <TextField fx:id="tfInnings" prefHeight="31.0" prefWidth="222.0" />
+                                          <TextField fx:id="tfBallsFaced" prefHeight="31.0" prefWidth="226.0" />
+                                          <TextField fx:id="tfCentury" prefHeight="31.0" prefWidth="218.0" />
+                                          <TextField fx:id="tfFifty" prefHeight="31.0" prefWidth="228.0" />
+                                          <TextField fx:id="tfBestScore" prefHeight="31.0" prefWidth="225.0" />
+                                          <TextField fx:id="tfDucks" prefHeight="31.0" prefWidth="224.0" />
+                                          <TextField fx:id="tfBallsBowled" />
+                                          <TextField fx:id="tfRunsGiven" />
+                                          <TextField fx:id="tfWickets" />
+                                          <TextField fx:id="tfW5" />
+                                          <TextField fx:id="tfW10" />
+                                          <TextField fx:id="tfBestBowling" />
+                                          <TextField fx:id="tfMom" />
+                                          <TextField fx:id="tfCatches" />
+                                          <TextField fx:id="tfFours" />
+                                          <TextField fx:id="tfSixes" />
+                                       </children>
+                                    </VBox>
+                                 </children></AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

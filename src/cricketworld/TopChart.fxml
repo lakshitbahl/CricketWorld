@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apTopChart" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cricketworld.TopChartController">
+   <children>
+      <SplitPane dividerPositions="0.16423357664233576" prefHeight="861.0" prefWidth="208.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.22769516728624536" layoutX="318.0" layoutY="296.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="538.0" prefWidth="1144.0">
+                           <children>
+                              <TabPane layoutX="317.0" layoutY="89.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab text="Test">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Button fx:id="bBatsman" layoutX="9.0" layoutY="9.0" mnemonicParsing="false" onAction="#topBatTest" prefHeight="122.0" prefWidth="225.0" text="Batsman" />
+                                                <Button fx:id="bBowler" layoutX="242.0" layoutY="8.0" mnemonicParsing="false" onAction="#topBowlerTest" prefHeight="125.0" prefWidth="229.0" text="Bowler" />
+                                                <Button fx:id="bBack" layoutX="479.0" layoutY="8.0" mnemonicParsing="false" onAction="#back" prefHeight="125.0" prefWidth="215.0" text="Back" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                  <Tab text="Odi">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Button fx:id="bBatsman" layoutX="6.0" layoutY="8.0" mnemonicParsing="false" onAction="#topODIBat" prefHeight="126.0" prefWidth="212.0" text="Batsman" />
+                                                <Button fx:id="bBowler" layoutX="230.0" layoutY="10.0" mnemonicParsing="false" onAction="#topODIBowl" prefHeight="123.0" prefWidth="217.0" text="Bowler" />
+                                                <Button fx:id="bBack" layoutX="455.0" layoutY="8.0" mnemonicParsing="false" onAction="#back" prefHeight="126.0" prefWidth="221.0" text="Back" />
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                    <Tab text="T20">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <Button fx:id="bBatsman" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" onAction="#topT20Bat" prefHeight="122.0" prefWidth="213.0" text="Batsman" />
+                                                <Button fx:id="bBowler" layoutX="227.0" layoutY="6.0" mnemonicParsing="false" onAction="#TopT20Bowl" prefHeight="124.0" prefWidth="215.0" text="Bowler" />
+                                                <Button fx:id="bBack" layoutX="447.0" layoutY="6.0" mnemonicParsing="false" onAction="#back" prefHeight="125.0" prefWidth="216.0" text="Back" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane fx:id="apTable" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

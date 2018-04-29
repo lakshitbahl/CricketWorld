@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cricketworld.TopTestBowlController">
+   <children>
+      <TableView fx:id="tvTopTestBowl" prefHeight="850.0" prefWidth="1064.0" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="436.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="tcTestName" prefWidth="196.0" text="Name" />
+          <TableColumn fx:id="tcTestMatches" prefWidth="150.0" text="Matches" />
+            <TableColumn fx:id="tcTestWickets" prefWidth="161.0" text="Wickets" />
+            <TableColumn fx:id="tcTestw5" prefWidth="149.0" text="W5" />
+            <TableColumn fx:id="tcTestw10" prefWidth="113.0" text="W10" />
+            <TableColumn fx:id="tcTestBowling" prefWidth="162.0" text="Best Bowling" />
+            <TableColumn fx:id="tcTestRunsGiven" prefWidth="131.0" text="Runs Given" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apViewerOption" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cricketworld.ViewerOptionController">
+   <children>
+      <TitledPane animated="false" layoutX="347.0" layoutY="236.0" text="CRICKET WORLD" textFill="#a40c0c" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="bSearching" layoutX="174.0" layoutY="89.0" mnemonicParsing="false" onAction="#searching" prefHeight="264.0" prefWidth="298.0" text="Searching" />
+                  <Button fx:id="bTopCharts" layoutX="564.0" layoutY="89.0" mnemonicParsing="false" onAction="#topCharts" prefHeight="263.0" prefWidth="308.0" text="Top Charts" />
+               </children>
+            </AnchorPane>
+        </content>
+         <font>
+            <Font name="Bauhaus 93" size="70.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

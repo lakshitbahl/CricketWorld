@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apPersonal" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cricketworld.FXMLDocumentController">
+   <children>
+      <SplitPane dividerPositions="0.08029197080291971" prefHeight="966.0" prefWidth="1582.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox prefHeight="518.0" prefWidth="150.0" AnchorPane.bottomAnchor="560.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="bPersonal" mnemonicParsing="false" onAction="#showPersonal" prefHeight="130.0" prefWidth="150.0" text="Personal" />
+                        <Button fx:id="bTest" mnemonicParsing="false" onAction="#showTest" prefHeight="130.0" prefWidth="150.0" text="Test" />
+                        <Button fx:id="bODI" mnemonicParsing="false" onAction="#showODI" prefHeight="130.0" prefWidth="150.0" text="ODI" />
+                        <Button fx:id="bT20" mnemonicParsing="false" onAction="#showT20" prefHeight="130.0" prefWidth="150.0" text="T20" />
+                     </children>
+                  </VBox>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+               <effect>
+                  <InnerShadow blurType="ONE_PASS_BOX" color="#c71cb2" radius="68.5" width="255.0" />
+               </effect>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.4851301115241636" layoutX="-1.0" orientation="VERTICAL" prefHeight="1078.0" prefWidth="1760.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="551.0" prefWidth="1758.0">
+                           <children>
+                              <Button fx:id="bUpdate" layoutX="1431.0" layoutY="354.0" mnemonicParsing="false" onAction="#updateData" prefHeight="100.0" prefWidth="125.0" text="Update" />
+                              <Button fx:id="bAdd" layoutX="1556.0" layoutY="254.0" mnemonicParsing="false" onAction="#addData" prefHeight="100.0" prefWidth="125.0" text="Add" />
+                              <Button fx:id="bLoad" layoutX="1431.0" layoutY="254.0" mnemonicParsing="false" onAction="#loadData" prefHeight="100.0" prefWidth="125.0" text="Load" />
+                              <Button fx:id="bNew" layoutX="1494.0" layoutY="154.0" mnemonicParsing="false" onAction="#newData" prefHeight="100.0" prefWidth="125.0" text="New" />
+                              <Button fx:id="bDelete" layoutX="1556.0" layoutY="354.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="100.0" prefWidth="125.0" text="Delete" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="354.0" />
+                              <TextField fx:id="tPlayerId" layoutX="74.0" layoutY="64.0" prefHeight="31.0" prefWidth="264.0" promptText="Enter Player Id" />
+                              <TextField fx:id="tName" layoutX="74.0" layoutY="138.0" prefHeight="31.0" prefWidth="264.0" promptText="Enter Name" />
+                              <TextField fx:id="tHeight" layoutX="74.0" layoutY="315.0" prefHeight="31.0" prefWidth="264.0" promptText="Enter Height" />
+                              <TextField fx:id="tWeight" layoutX="74.0" layoutY="404.0" prefHeight="31.0" prefWidth="264.0" promptText="Enter Weight" />
+                              <RadioButton fx:id="rWicketKeeperYes" layoutX="1055.0" layoutY="405.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Yes">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="wicketkeeper" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton fx:id="rWicketKeeperNo" layoutX="1201.0" layoutY="405.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="No" toggleGroup="$wicketkeeper" />
+                              <Label layoutX="871.0" layoutY="395.0" prefHeight="50.0" prefWidth="125.0" text="Wicket-keeper">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="tBloodGroup" layoutX="493.0" layoutY="405.0" prefHeight="31.0" prefWidth="264.0" promptText="Enter Blood Group" />
+                              <Label layoutX="871.0" layoutY="131.0" prefHeight="50.0" prefWidth="75.0" text="Gender">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="871.0" layoutY="220.0" prefHeight="50.0" prefWidth="75.0" text="Batsman">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="871.0" layoutY="306.0" prefHeight="50.0" prefWidth="75.0" text="Bowler">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton fx:id="rMale" layoutX="1050.0" layoutY="146.0" mnemonicParsing="false" text="Male">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="gender" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton fx:id="rFemale" layoutX="1203.0" layoutY="146.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+                              <RadioButton fx:id="rBatYes" layoutX="1050.0" layoutY="235.0" mnemonicParsing="false" text="Yes">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="batsman" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton fx:id="rBatNo" layoutX="1203.0" layoutY="235.0" mnemonicParsing="false" text="No" toggleGroup="$batsman" />
+                              <RadioButton fx:id="rBowlYes" layoutX="1050.0" layoutY="321.0" mnemonicParsing="false" text="Yes">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="bowler" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton fx:id="rBowlNo" layoutX="1203.0" layoutY="321.0" mnemonicParsing="false" text="No" toggleGroup="$bowler" />
+                              <DatePicker fx:id="dDOB" layoutX="74.0" layoutY="220.0" prefHeight="31.0" prefWidth="264.0" promptText="Enter DOB" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="219.0" layoutX="463.0" layoutY="34.0" stroke="BLACK" strokeType="INSIDE" width="318.0" />
+                              <ComboBox fx:id="cbCountry" layoutX="493.0" layoutY="316.0" prefHeight="31.0" prefWidth="264.0" promptText="Enter Country" />
+                              <Button layoutX="1448.0" layoutY="27.0" mnemonicParsing="false" onAction="#back" prefHeight="74.0" prefWidth="216.0" text="Back" />
+                           </children>
+                           <effect>
+                              <Glow level="0.31">
+                                 <input>
+                                    <ColorAdjust brightness="-0.03" contrast="-0.15" hue="-0.34" saturation="0.15" />
+                                 </input></Glow>
+                           </effect>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="183.0" prefWidth="1758.0">
+                           <children>
+                              <TableView fx:id="tvPersonalInfo" layoutX="1.0" layoutY="52.0" onMouseClicked="#uploadData" prefHeight="550.0" prefWidth="1743.0" AnchorPane.bottomAnchor="-52.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="52.0">
+                                <columns>
+                                  <TableColumn fx:id="tcPlayerId" prefWidth="163.0" text="Player Id" />
+                                  <TableColumn fx:id="tcName" prefWidth="181.0" text="Name" />
+                                    <TableColumn fx:id="tcDOB" prefWidth="196.0" text="DOB" />
+                                    <TableColumn fx:id="tcHeight" prefWidth="109.0" text="Height" />
+                                    <TableColumn fx:id="tcWeight" prefWidth="129.0" text="Weight" />
+                                    <TableColumn fx:id="tcCountry" prefWidth="191.0" text="Country" />
+                                    <TableColumn fx:id="tcBloodGroup" prefWidth="127.0" text="Blood Group" />
+                                    <TableColumn fx:id="tcGender" prefWidth="169.0" text="Gender" />
+                                    <TableColumn fx:id="tcBatsman" prefWidth="160.0" text="Batsman" />
+                                    <TableColumn fx:id="tcBowler" prefWidth="168.0" text="Bowler" />
+                                    <TableColumn fx:id="tcWicketKeeper" prefWidth="163.0" text="Wicket-Keeper" />
+                                </columns>
+                                 <effect>
+                                    <SepiaTone />
+                                 </effect>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

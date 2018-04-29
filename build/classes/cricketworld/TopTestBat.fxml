@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cricketworld.TopTestBatController">
+   <children>
+      <TableView fx:id="tvTopTestBat" prefHeight="704.0" prefWidth="1078.0">
+        <columns>
+          <TableColumn fx:id="tcTestName" prefWidth="240.0" text="Name" />
+          <TableColumn fx:id="tcTestRuns" prefWidth="136.0" text="Runs" />
+            <TableColumn fx:id="tcTestMatches" prefWidth="164.0" text="Matches" />
+            <TableColumn fx:id="tcTestCentury" prefWidth="179.0" text="Century" />
+            <TableColumn fx:id="tcTestFifty" prefWidth="184.0" text="Fifty" />
+            <TableColumn fx:id="tcTestBest" prefWidth="173.0" text="Best Score" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="apUsername" prefHeight="794.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cricketworld.UsernameController">
+   <children>
+      <JFXTextField fx:id="tfUsername" focusColor="#0c287c" labelFloat="true" layoutX="187.0" layoutY="188.0" prefHeight="29.0" prefWidth="290.0" promptText="Username">
+         <font>
+            <Font size="18.0" />
+         </font></JFXTextField>
+      <Label fx:id="lshowPass" layoutX="187.0" layoutY="444.0" prefHeight="45.0" prefWidth="290.0" />
+      <JFXButton fx:id="bLogin" buttonType="RAISED" layoutX="608.0" layoutY="217.0" onAction="#login" prefHeight="62.0" prefWidth="159.0" ripplerFill="#f52828" text="Login">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="bSignup" buttonType="RAISED" layoutX="881.0" layoutY="226.0" onAction="#signUp" prefHeight="62.0" prefWidth="159.0" ripplerFill="#f51414" text="Sign Up">
+         <font>
+            <Font size="22.0" />
+         </font></JFXButton>
+      <JFXCheckBox fx:id="cbShowPassword" layoutX="547.0" layoutY="333.0" onMouseClicked="#cbshowPassword" prefHeight="21.0" prefWidth="159.0" text="Show/Hide Password">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXCheckBox>
+      <JFXButton fx:id="bViewer" buttonType="RAISED" layoutX="785.0" layoutY="656.0" onAction="#viewer" prefHeight="62.0" prefWidth="229.0" ripplerFill="#340202" text="Viewer">
+         <font>
+            <Font size="47.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="bHome" buttonType="RAISED" layoutX="785.0" layoutY="489.0" onAction="#home" prefHeight="62.0" prefWidth="229.0" text="Home">
+         <font>
+            <Font size="47.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXPasswordField fx:id="tfPassword" layoutX="187.0" layoutY="329.0" onKeyReleased="#showpass" prefHeight="29.0" prefWidth="290.0" promptText="Password">
+         <font>
+            <Font size="18.0" />
+         </font></JFXPasswordField>
+   </children>
+</AnchorPane>
